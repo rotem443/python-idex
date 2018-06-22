@@ -7,7 +7,7 @@ import requests
 import time
 
 from decimal import Decimal
-from ethereum.utils import sha3, ecsign, encode_int32
+from idex.utils import sha3, ecsign, encode_int32
 
 from .exceptions import IdexException, IdexWalletAddressNotFoundException, IdexPrivateKeyNotFoundException, IdexAPIException, IdexRequestException, IdexCurrencyNotFoundException
 
