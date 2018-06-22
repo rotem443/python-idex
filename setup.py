@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 from setuptools import setup
 
+install_requires = list(x.strip() for x in open('requirements.txt'))
+
 setup(
     name='python-idex',
     version='0.2.7',
@@ -10,7 +12,7 @@ setup(
     author='Sam McHardy',
     license='MIT',
     author_email='',
-    install_requires=['requests', 'ethereum'],
+    install_requires=install_requires,
     keywords='idex exchange rest api ethereum eth eos',
     classifiers=[
           'Intended Audience :: Developers',
